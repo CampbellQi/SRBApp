@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>                   
+
+	<dict><key>png</key><string>flowers_01_01.png</string><key>code</key><string>U+2600</string></dict>
+	<dict><key>png</key><string>flowers_01_02.png</string><key>code</key><string>U+2614</string></dict>
+	<dict><key>png</key><string>flowers_01_03.png</string><key>code</key><string>U+2601</string></dict>
+	<dict><key>png</key><string>flowers_01_04.png</string><key>code</key><string>U+26C4</string></dict>
+	<dict><key>png</key><string>flowers_01_05.png</string><key>code</key><string>U+1F319</string></dict>
+	<dict><key>png</key><string>flowers_01_06.png</string><key>code</key><string>U+26A1</string></dict>
+	<dict><key>png</key><string>flowers_01_07.png</string><key>code</key><string>U+1F300</string></dict>
+	<dict><key>png</key><string>flowers_01_08.png</string><key>code</key><string>U+1F30A</string></dict>   
+	<dict><key>png</key><string>flowers_01_09.png</string><key>code</key><string>U+1F431</string></dict>  
+	<dict><key>png</key><string>flowers_01_10.png</string><key>code</key><string>U+1F436</string></dict>   
+	<dict><key>png</key><string>flowers_01_11.png</string><key>code</key><string>U+1F42D</string></dict>   
+	<dict><key>png</key><string>flowers_02_01.png</string><key>code</key><string>U+1F439</string></dict>   
+	<dict><key>png</key><string>flowers_02_02.png</string><key>code</key><string>U+1F430</string></dict>   
+	<dict><key>png</key><string>flowers_02_03.png</string><key>code</key><string>U+1F43A</string></dict>   
+	<dict><key>png</key><string>flowers_02_04.png</string><key>code</key><string>U+1F438</string></dict>   
+	<dict><key>png</key><string>flowers_02_05.png</string><key>code</key><string>U+1F42F</string></dict>   
+	<dict><key>png</key><string>flowers_02_06.png</string><key>code</key><string>U+1F428</string></dict>   
+	<dict><key>png</key><string>flowers_02_07.png</string><key>code</key><string>U+1F43B</string></dict>   
+	<dict><key>png</key><string>flowers_02_08.png</string><key>code</key><string>U+1F437</string></dict>   
+	<dict><key>png</key><string>flowers_02_09.png</string><key>code</key><string>U+1F42E</string></dict>   
+	<dict><key>png</key><string>flowers_02_10.png</string><key>code</key><string>U+1F417</string></dict>   
+	<dict><key>png</key><string>flowers_02_11.png</string><key>code</key><string>U+1F435</string></dict>   
+	<dict><key>png</key><string>flowers_03_01.png</string><key>code</key><string>U+1F412</string></dict>   
+	<dict><key>png</key><string>flowers_03_02.png</string><key>code</key><string>U+1F434</string></dict>   
+	<dict><key>png</key><string>flowers_03_03.png</string><key>code</key><string>U+1F40E</string></dict>   
+	<dict><key>png</key><string>flowers_03_04.png</string><key>code</key><string>U+1F42B</string></dict>   
+	<dict><key>png</key><string>flowers_03_05.png</string><key>code</key><string>U+1F411</string></dict>   
+	<dict><key>png</key><string>flowers_03_06.png</string><key>code</key><string>U+1F418</string></dict>   
+	<dict><key>png</key><string>flowers_03_07.png</string><key>code</key><string>U+1F40D</string></dict>   
+	<dict><key>png</key><string>flowers_03_08.png</string><key>code</key><string>U+1F426</string></dict>   
+	<dict><key>png</key><string>flowers_03_09.png</string><key>code</key><string>U+1F424</string></dict>   
+	<dict><key>png</key><string>flowers_03_10.png</string><key>code</key><string>U+1F414</string></dict>   
+	<dict><key>png</key><string>flowers_03_11.png</string><key>code</key><string>U+1F427</string></dict>   
+	<dict><key>png</key><string>flowers_04_01.png</string><key>code</key><string>U+1F41B</string></dict>   
+	<dict><key>png</key><string>flowers_04_02.png</string><key>code</key><string>U+1F419</string></dict>   
+	<dict><key>png</key><string>flowers_04_03.png</string><key>code</key><string>U+1F420</string></dict>   
+	<dict><key>png</key><string>flowers_04_04.png</string><key>code</key><string>U+1F41F</string></dict>   
+	<dict><key>png</key><string>flowers_04_05.png</string><key>code</key><string>U+1F433</string></dict>   
+	<dict><key>png</key><string>flowers_04_06.png</string><key>code</key><string>U+1F42C</string></dict>  
+	<dict><key>png</key><string>flowers_04_07.png</string><key>code</key><string>U+1F490</string></dict>
+	<dict><key>png</key><string>flowers_04_08.png</string><key>code</key><string>U+1F338</string></dict>   
+	<dict><key>png</key><string>flowers_04_09.png</string><key>code</key><string>U+1F337</string></dict>   
+	<dict><key>png</key><string>flowers_04_10.png</string><key>code</key><string>U+1F340</string></dict>   
+	<dict><key>png</key><string>flowers_04_11.png</string><key>code</key><string>U+1F339</string></dict>   
+	<dict><key>png</key><string>flowers_05_01.png</string><key>code</key><string>U+1F33B</string></dict>   
+	<dict><key>png</key><string>flowers_05_02.png</string><key>code</key><string>U+1F33A</string></dict>   
+	<dict><key>png</key><string>flowers_05_03.png</string><key>code</key><string>U+1F341</string></dict>   
+	<dict><key>png</key><string>flowers_05_04.png</string><key>code</key><string>U+1F343</string></dict>   
+	<dict><key>png</key><string>flowers_05_05.png</string><key>code</key><string>U+1F342</string></dict>   
+	<dict><key>png</key><string>flowers_05_06.png</string><key>code</key><string>U+1F334</string></dict>   
+	<dict><key>png</key><string>flowers_05_07.png</string><key>code</key><string>U+1F335</string></dict>   
+	<dict><key>png</key><string>flowers_05_08.png</string><key>code</key><string>U+1F33E</string></dict>   
+	<dict><key>png</key><string>flowers_05_09.png</string><key>code</key><string>U+1F41A</string></dict>   
+	   
+</array>                      
+</plist>

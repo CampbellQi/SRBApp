@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SPScreeningListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZl-Vj-pIM">
+                        <rect key="frame" x="16" y="1" width="60" height="30"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RVM-0B-Vso"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb1-sG-kCj">
+                        <rect key="frame" x="92" y="1" width="60" height="30"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fkc-SI-W1f"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e96-7b-tVa">
+                        <rect key="frame" x="168" y="1" width="60" height="30"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qp4-h2-EUT"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoV-j2-FTN">
+                        <rect key="frame" x="244" y="1" width="60" height="30"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="W5Y-v2-hDM"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e96-7b-tVa" firstAttribute="top" secondItem="gZl-Vj-pIM" secondAttribute="top" id="37c-Ht-538"/>
+                    <constraint firstItem="BoV-j2-FTN" firstAttribute="width" secondItem="gZl-Vj-pIM" secondAttribute="width" id="83d-kR-Dvz"/>
+                    <constraint firstAttribute="bottom" secondItem="gZl-Vj-pIM" secondAttribute="bottom" constant="12" id="9DR-Ut-oY2"/>
+                    <constraint firstItem="gZl-Vj-pIM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="Abf-Ok-okO"/>
+                    <constraint firstItem="gZl-Vj-pIM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="L9U-Vt-bzl"/>
+                    <constraint firstItem="BoV-j2-FTN" firstAttribute="leading" secondItem="e96-7b-tVa" secondAttribute="trailing" constant="16" id="LU9-oX-FxF"/>
+                    <constraint firstItem="kb1-sG-kCj" firstAttribute="width" secondItem="gZl-Vj-pIM" secondAttribute="width" id="PCT-n7-iYa"/>
+                    <constraint firstItem="BoV-j2-FTN" firstAttribute="top" secondItem="gZl-Vj-pIM" secondAttribute="top" id="Qgi-dc-3TN"/>
+                    <constraint firstItem="BoV-j2-FTN" firstAttribute="height" secondItem="gZl-Vj-pIM" secondAttribute="height" id="TR5-Vn-zpb"/>
+                    <constraint firstAttribute="trailing" secondItem="BoV-j2-FTN" secondAttribute="trailing" constant="16" id="VxL-cq-MMd"/>
+                    <constraint firstItem="e96-7b-tVa" firstAttribute="height" secondItem="gZl-Vj-pIM" secondAttribute="height" id="bow-5F-gu6"/>
+                    <constraint firstItem="e96-7b-tVa" firstAttribute="leading" secondItem="kb1-sG-kCj" secondAttribute="trailing" constant="16" id="iLl-2C-qxa"/>
+                    <constraint firstItem="kb1-sG-kCj" firstAttribute="height" secondItem="gZl-Vj-pIM" secondAttribute="height" id="jSj-u4-mjh"/>
+                    <constraint firstItem="kb1-sG-kCj" firstAttribute="top" secondItem="gZl-Vj-pIM" secondAttribute="top" id="kvB-jf-XWC"/>
+                    <constraint firstItem="kb1-sG-kCj" firstAttribute="leading" secondItem="gZl-Vj-pIM" secondAttribute="trailing" constant="16" id="mHw-UB-a5C"/>
+                    <constraint firstItem="e96-7b-tVa" firstAttribute="width" secondItem="gZl-Vj-pIM" secondAttribute="width" id="zw4-UK-Rjv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="578" y="419"/>
+        </tableViewCell>
+    </objects>
+</document>

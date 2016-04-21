@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopicDetailSPListController">
+            <connections>
+                <outlet property="ContentView" destination="T8z-Rs-cUY" id="dFY-J0-Ke7"/>
+                <outlet property="backBtn" destination="GIX-ge-IA0" id="ltI-23-pbp"/>
+                <outlet property="completeBtn" destination="8yS-dI-Xql" id="w3O-TC-HSp"/>
+                <outlet property="tableView" destination="m8j-01-NSQ" id="wmM-JO-TGg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yS-dI-Xql">
+                    <rect key="frame" x="266" y="20" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="Q24-V3-Ij5"/>
+                        <constraint firstAttribute="height" constant="30" id="dwT-fm-0Yl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" red="0.92549019610000005" green="0.46666666670000001" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8z-Rs-cUY" userLabel="ContentView">
+                    <rect key="frame" x="8" y="59" width="304" height="358"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="想求购哪一个？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T02-f4-rCx">
+                            <rect key="frame" x="13" y="8" width="283" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" red="0.92549019610000005" green="0.46666666670000001" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m8j-01-NSQ">
+                            <rect key="frame" x="0.0" y="37" width="304" height="321"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="ELm-4O-yUw"/>
+                                <outlet property="delegate" destination="-1" id="MbE-v1-w89"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="m8j-01-NSQ" secondAttribute="bottom" id="E0A-Hm-fwi"/>
+                        <constraint firstAttribute="trailing" secondItem="m8j-01-NSQ" secondAttribute="trailing" id="FkC-KB-mJb"/>
+                        <constraint firstItem="m8j-01-NSQ" firstAttribute="top" secondItem="T8z-Rs-cUY" secondAttribute="top" constant="37" id="Jp5-1z-gC9"/>
+                        <constraint firstItem="m8j-01-NSQ" firstAttribute="leading" secondItem="T8z-Rs-cUY" secondAttribute="leading" id="Skg-Fo-aPT"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIX-ge-IA0">
+                    <rect key="frame" x="0.0" y="13" width="44" height="44"/>
+                    <state key="normal" image="dc_topic_detail_sp_back"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8yS-dI-Xql" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="043-L9-MK3"/>
+                <constraint firstAttribute="trailing" secondItem="8yS-dI-Xql" secondAttribute="trailing" constant="8" id="IFB-04-5FS"/>
+                <constraint firstAttribute="trailing" secondItem="T8z-Rs-cUY" secondAttribute="trailing" constant="8" id="YQc-Hq-VlE"/>
+                <constraint firstAttribute="bottom" secondItem="T8z-Rs-cUY" secondAttribute="bottom" constant="63" id="axl-bg-9bD"/>
+                <constraint firstItem="T8z-Rs-cUY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="gfW-Za-od4"/>
+                <constraint firstItem="T8z-Rs-cUY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="59" id="mNa-JS-6zf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="716" y="498"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dc_topic_detail_sp_back" width="8" height="20"/>
+    </resources>
+</document>

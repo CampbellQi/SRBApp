@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailController">
+            <connections>
+                <outlet property="contentSV" destination="h6z-p4-jMO" id="oZd-68-TYR"/>
+                <outlet property="operateBtnSuperView" destination="UOF-MD-7Oc" id="W0F-Po-Tht"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rE-5t-Xch">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="cgn-cQ-gUl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6z-p4-jMO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="441"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOF-MD-7Oc">
+                    <rect key="frame" x="0.0" y="442" width="320" height="38"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="Wkl-DT-U8b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UOF-MD-7Oc" secondAttribute="trailing" id="3M4-g1-FRb"/>
+                <constraint firstItem="h6z-p4-jMO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4M3-mR-hfa"/>
+                <constraint firstItem="3rE-5t-Xch" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4VS-Fl-gdH"/>
+                <constraint firstItem="h6z-p4-jMO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="D4J-Ug-QJG"/>
+                <constraint firstItem="UOF-MD-7Oc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IYt-Fy-ZK0"/>
+                <constraint firstAttribute="trailing" secondItem="h6z-p4-jMO" secondAttribute="trailing" id="T5e-lB-ivJ"/>
+                <constraint firstItem="3rE-5t-Xch" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U6f-NL-zvB"/>
+                <constraint firstAttribute="trailing" secondItem="3rE-5t-Xch" secondAttribute="trailing" id="XKt-0V-g6M"/>
+                <constraint firstItem="h6z-p4-jMO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YoT-vc-svH"/>
+                <constraint firstAttribute="bottom" secondItem="UOF-MD-7Oc" secondAttribute="bottom" id="ZHB-Zi-G5Q"/>
+                <constraint firstItem="UOF-MD-7Oc" firstAttribute="top" secondItem="h6z-p4-jMO" secondAttribute="bottom" constant="1" id="kWN-AS-NfK"/>
+                <constraint firstItem="UOF-MD-7Oc" firstAttribute="top" secondItem="h6z-p4-jMO" secondAttribute="bottom" constant="3" id="wc6-BO-L7E"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="YoT-vc-svH"/>
+                    <exclude reference="wc6-BO-L7E"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="830" y="388"/>
+        </view>
+    </objects>
+</document>

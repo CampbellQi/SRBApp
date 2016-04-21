@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopicDetailHeaderView">
+            <connections>
+                <outlet property="accountLbl" destination="v1x-Ff-plM" id="lOQ-54-sV8"/>
+                <outlet property="avaterIV" destination="NFK-U8-ZkE" id="SuX-Ea-WP1"/>
+                <outlet property="markIV" destination="iHD-6Z-beL" id="v4w-FZ-bVD"/>
+                <outlet property="markView" destination="bS7-f7-QG3" id="4yy-s2-lyd"/>
+                <outlet property="timeLbl" destination="GaF-Zl-jPt" id="TYt-Tz-krZ"/>
+                <outlet property="titleLbl" destination="BaO-Kz-Zla" id="33K-6Y-sb8"/>
+                <outlet property="topView" destination="iN0-l3-epB" id="OgM-aV-iJr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小bang" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1x-Ff-plM">
+                    <rect key="frame" x="61" y="3" width="115" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="qnZ-mR-gYc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marktopic_list_mark" translatesAutoresizingMaskIntoConstraints="NO" id="iHD-6Z-beL">
+                    <rect key="frame" x="13" y="51" width="15" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="T74-1V-r2q"/>
+                        <constraint firstAttribute="width" constant="15" id="ous-Ne-kdm"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题标题马来西亚游行队标题标题马来西亚游行队标题标题马来西亚游行队标题标题马来西亚游行队标题标题马来西亚游行队" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaO-Kz-Zla">
+                    <rect key="frame" x="8" y="76" width="304" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="0jr-zX-ddn"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="6OH-h8-x5A"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6OH-h8-x5A"/>
+                        </mask>
+                    </variation>
+                </label>
+                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_accon_nor.png" translatesAutoresizingMaskIntoConstraints="NO" id="NFK-U8-ZkE">
+                    <rect key="frame" x="8" y="3" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="1ry-bB-2oL"/>
+                        <constraint firstAttribute="height" constant="40" id="wAf-ah-1BN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J96-8a-Jvo">
+                    <rect key="frame" x="215" y="3" width="91" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="3bf-WY-QYc"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="SUI-X5-cjl"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="hQs-Vk-r6M"/>
+                        <constraint firstAttribute="height" constant="16" id="rb3-fy-ZaW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="SUI-X5-cjl"/>
+                            <exclude reference="hQs-Vk-r6M"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bS7-f7-QG3" customClass="DWTagList">
+                    <rect key="frame" x="33" y="50" width="273" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="MUb-kx-U4p"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topic_detail_dividing_line" translatesAutoresizingMaskIntoConstraints="NO" id="VjK-8a-iKr">
+                    <rect key="frame" x="0.0" y="103" width="320" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="7jv-il-uOW"/>
+                        <constraint firstAttribute="height" constant="1" id="YkA-9r-Xe1"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="7jv-il-uOW"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3小时前" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaF-Zl-jPt">
+                    <rect key="frame" x="61" y="24" width="137" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="137" id="s4i-TC-yYV"/>
+                        <constraint firstAttribute="height" constant="19" id="xC6-1O-b27"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="v1x-Ff-plM" firstAttribute="top" secondItem="NFK-U8-ZkE" secondAttribute="top" id="1Ha-RS-Dj4"/>
+                <constraint firstItem="bS7-f7-QG3" firstAttribute="top" secondItem="iHD-6Z-beL" secondAttribute="top" constant="-1" id="3wP-0f-7SQ"/>
+                <constraint firstItem="GaF-Zl-jPt" firstAttribute="leading" secondItem="NFK-U8-ZkE" secondAttribute="trailing" constant="13" id="6TF-ni-dyw"/>
+                <constraint firstItem="iHD-6Z-beL" firstAttribute="top" secondItem="NFK-U8-ZkE" secondAttribute="bottom" constant="8" id="6Tb-Yg-jXj"/>
+                <constraint firstItem="NFK-U8-ZkE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="9SO-4t-eqf"/>
+                <constraint firstItem="iHD-6Z-beL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="ECs-2U-ZFo"/>
+                <constraint firstItem="J96-8a-Jvo" firstAttribute="leading" secondItem="v1x-Ff-plM" secondAttribute="trailing" constant="39" id="S1a-L5-A7G"/>
+                <constraint firstItem="BaO-Kz-Zla" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="VhJ-Vj-yl8"/>
+                <constraint firstItem="bS7-f7-QG3" firstAttribute="leading" secondItem="iHD-6Z-beL" secondAttribute="trailing" constant="5" id="cg1-Gp-Eli"/>
+                <constraint firstAttribute="trailing" secondItem="BaO-Kz-Zla" secondAttribute="trailing" constant="8" id="dKg-hG-ZGC"/>
+                <constraint firstAttribute="bottom" secondItem="BaO-Kz-Zla" secondAttribute="bottom" id="eot-Qo-qSx"/>
+                <constraint firstItem="J96-8a-Jvo" firstAttribute="top" secondItem="NFK-U8-ZkE" secondAttribute="top" id="fgh-2A-i33"/>
+                <constraint firstItem="v1x-Ff-plM" firstAttribute="leading" secondItem="NFK-U8-ZkE" secondAttribute="trailing" constant="13" id="jl4-TD-49f"/>
+                <constraint firstItem="bS7-f7-QG3" firstAttribute="top" secondItem="GaF-Zl-jPt" secondAttribute="bottom" constant="7" id="n7J-d3-NvM"/>
+                <constraint firstItem="NFK-U8-ZkE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="nco-aV-kUt"/>
+                <constraint firstAttribute="trailing" secondItem="VjK-8a-iKr" secondAttribute="trailing" id="sG4-1Q-mov"/>
+                <constraint firstAttribute="bottom" secondItem="VjK-8a-iKr" secondAttribute="bottom" id="sMg-cK-cFs"/>
+                <constraint firstAttribute="trailing" secondItem="bS7-f7-QG3" secondAttribute="trailing" constant="14" id="tIv-SN-OC0"/>
+                <constraint firstItem="VjK-8a-iKr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uXF-wC-gQt"/>
+                <constraint firstAttribute="trailing" secondItem="J96-8a-Jvo" secondAttribute="trailing" constant="14" id="vZF-se-ErR"/>
+                <constraint firstItem="BaO-Kz-Zla" firstAttribute="top" secondItem="bS7-f7-QG3" secondAttribute="bottom" constant="2" id="z2s-dN-SNL"/>
+                <constraint firstItem="GaF-Zl-jPt" firstAttribute="top" secondItem="v1x-Ff-plM" secondAttribute="bottom" constant="2" id="z7K-w3-6DU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="eot-Qo-qSx"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="1014" y="291"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_accon_nor.png" width="50" height="50"/>
+        <image name="marktopic_list_mark" width="15" height="15"/>
+        <image name="topic_detail_dividing_line" width="621" height="1"/>
+    </resources>
+</document>

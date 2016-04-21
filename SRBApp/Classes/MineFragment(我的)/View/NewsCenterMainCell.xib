@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="NewsCenterMainCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="473-T4-asj">
+                        <rect key="frame" x="19" y="18" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="O8H-y5-3wX"/>
+                            <constraint firstAttribute="height" constant="40" id="aj5-Ek-Fr2"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8Y-41-It9">
+                        <rect key="frame" x="280" y="20" width="32" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="PcY-6D-NtF"/>
+                            <constraint firstAttribute="width" constant="32" id="izM-Ad-f4J"/>
+                        </constraints>
+                        <state key="normal" image="mf_newsCenter_more"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbT-x0-UiX">
+                        <rect key="frame" x="264" y="28" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.0" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="WYM-qq-Z7W"/>
+                            <constraint firstAttribute="width" constant="20" id="mHQ-eH-RMA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9U-NG-KS6">
+                        <rect key="frame" x="79" y="28" width="134" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="134" id="It6-7H-gLv"/>
+                            <constraint firstAttribute="height" constant="21" id="LlJ-cP-5TH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CbT-x0-UiX" firstAttribute="centerY" secondItem="I8Y-41-It9" secondAttribute="centerY" id="4IC-0P-gi5"/>
+                    <constraint firstItem="I8Y-41-It9" firstAttribute="leading" secondItem="CbT-x0-UiX" secondAttribute="trailing" constant="-4" id="6cJ-t1-EoU"/>
+                    <constraint firstItem="q9U-NG-KS6" firstAttribute="centerY" secondItem="473-T4-asj" secondAttribute="centerY" constant="0.5" id="6lX-n1-juy"/>
+                    <constraint firstItem="I8Y-41-It9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BhC-yJ-t3U"/>
+                    <constraint firstItem="473-T4-asj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="Phf-sm-gHu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="I8Y-41-It9" secondAttribute="trailing" id="QTH-5n-83N"/>
+                    <constraint firstItem="q9U-NG-KS6" firstAttribute="leading" secondItem="473-T4-asj" secondAttribute="trailing" constant="20" id="a8p-iS-JBb"/>
+                    <constraint firstItem="473-T4-asj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="0.5" id="cdU-Tw-XhL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="IV" destination="473-T4-asj" id="spd-ZN-avp"/>
+                <outlet property="countLbl" destination="CbT-x0-UiX" id="o0C-RV-AcT"/>
+                <outlet property="nameLbl" destination="q9U-NG-KS6" id="hy8-oc-d7Y"/>
+            </connections>
+            <point key="canvasLocation" x="538" y="442"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mf_newsCenter_more" width="6" height="14"/>
+    </resources>
+</document>

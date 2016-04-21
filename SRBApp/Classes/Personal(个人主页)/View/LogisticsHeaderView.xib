@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogisticsHeaderView">
+            <connections>
+                <outlet property="codeLbl" destination="aUG-so-DkR" id="48u-td-17J"/>
+                <outlet property="companyLbl" destination="naY-WG-aN2" id="vYf-GD-yKg"/>
+                <outlet property="coverIV" destination="kIE-2d-Rwp" id="1ah-vL-xJc"/>
+                <outlet property="noLogisticsIV" destination="alS-YK-Kid" id="bEo-KL-792"/>
+                <outlet property="topView" destination="iN0-l3-epB" id="fdG-B3-aVU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-md-04u">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topic_detail_dividing_line" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-6O-7iO">
+                            <rect key="frame" x="0.0" y="98" width="320" height="1"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zanwu.png" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-2d-Rwp">
+                            <rect key="frame" x="8" y="8" width="87" height="84"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="承运来源：圆通快递" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naY-WG-aN2">
+                            <rect key="frame" x="103" y="8" width="217" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="6Ue-16-aNv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运单编号：564511256564" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUG-so-DkR">
+                            <rect key="frame" x="103" y="29" width="217" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="lGo-PG-LXM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="naY-WG-aN2" firstAttribute="top" secondItem="GdG-md-04u" secondAttribute="top" constant="8" id="462-WG-TEP"/>
+                        <constraint firstAttribute="height" constant="100" id="7RK-JO-fND"/>
+                        <constraint firstItem="naY-WG-aN2" firstAttribute="leading" secondItem="GdG-md-04u" secondAttribute="leading" constant="103" id="FbK-ro-YP3"/>
+                        <constraint firstAttribute="trailing" secondItem="aUG-so-DkR" secondAttribute="trailing" id="JSj-FE-ish"/>
+                        <constraint firstItem="aUG-so-DkR" firstAttribute="leading" secondItem="GdG-md-04u" secondAttribute="leading" constant="103" id="ZJC-gN-a43"/>
+                        <constraint firstAttribute="trailing" secondItem="naY-WG-aN2" secondAttribute="trailing" id="dS7-yD-VnF"/>
+                        <constraint firstItem="aUG-so-DkR" firstAttribute="top" secondItem="naY-WG-aN2" secondAttribute="bottom" id="l2L-bo-r9d"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSb-zW-ZMG">
+                    <rect key="frame" x="0.0" y="113" width="320" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topic_detail_dividing_line" translatesAutoresizingMaskIntoConstraints="NO" id="cqt-qN-WOH">
+                            <rect key="frame" x="19" y="45" width="280" height="1"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="物流跟踪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6A-RY-zZt">
+                            <rect key="frame" x="19" y="8" width="217" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5H4-c9-Yad"/>
+                    </constraints>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_no_logistics" translatesAutoresizingMaskIntoConstraints="NO" id="alS-YK-Kid">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="alS-YK-Kid" secondAttribute="bottom" id="AxX-Io-Jh8"/>
+                <constraint firstItem="GdG-md-04u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BuT-4c-nFy"/>
+                <constraint firstItem="alS-YK-Kid" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jit-Nr-YKv"/>
+                <constraint firstItem="dSb-zW-ZMG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SQG-LO-2hA"/>
+                <constraint firstAttribute="trailing" secondItem="dSb-zW-ZMG" secondAttribute="trailing" id="Spv-UO-MG9"/>
+                <constraint firstItem="GdG-md-04u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UOD-pf-f3o"/>
+                <constraint firstItem="alS-YK-Kid" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eLB-gu-DBZ"/>
+                <constraint firstItem="dSb-zW-ZMG" firstAttribute="top" secondItem="GdG-md-04u" secondAttribute="bottom" constant="13" id="r1L-Fx-O0b"/>
+                <constraint firstAttribute="trailing" secondItem="alS-YK-Kid" secondAttribute="trailing" id="wAL-7s-Uez"/>
+                <constraint firstAttribute="trailing" secondItem="GdG-md-04u" secondAttribute="trailing" id="wPc-cv-SiP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="719" y="241.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="order_no_logistics" width="185" height="102"/>
+        <image name="topic_detail_dividing_line" width="621" height="1"/>
+        <image name="zanwu.png" width="1200" height="900"/>
+    </resources>
+</document>

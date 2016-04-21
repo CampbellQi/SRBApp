@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PublishTopicFooterView">
+            <connections>
+                <outlet property="locationHideBtn" destination="Hwb-MC-nXQ" id="6GD-S0-eBq"/>
+                <outlet property="locationLbl" destination="JgF-HT-L9G" id="v4K-fv-lp0"/>
+                <outlet property="topView" destination="iN0-l3-epB" id="67y-Xc-UWd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fb_wz.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Ur-OF-DjZ">
+                    <rect key="frame" x="8" y="0.0" width="14" height="28"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国北京" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgF-HT-L9G">
+                    <rect key="frame" x="30" y="4" width="185" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="wVa-uF-gDu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwb-MC-nXQ">
+                    <rect key="frame" x="245" y="4" width="68" height="22"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="AXr-WX-XFG"/>
+                        <constraint firstAttribute="height" constant="22" id="TFj-bh-V9S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="隐藏位置">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="locationHideBtnClicked:" destination="-1" eventType="touchUpInside" id="1hr-Mv-EeT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hwb-MC-nXQ" secondAttribute="trailing" constant="7" id="HIc-7f-wcf"/>
+                <constraint firstItem="JgF-HT-L9G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="KFp-Vl-Yli"/>
+                <constraint firstItem="Hwb-MC-nXQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="KW4-Eg-8iA"/>
+                <constraint firstItem="Hwb-MC-nXQ" firstAttribute="leading" secondItem="JgF-HT-L9G" secondAttribute="trailing" constant="30" id="VDu-S8-vsy"/>
+                <constraint firstItem="JgF-HT-L9G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="un0-bf-MB9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="907" y="520"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fb_wz.png" width="22" height="32"/>
+    </resources>
+</document>

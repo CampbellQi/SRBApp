@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  SRBApp
+//
+//  Created by zxk on 14/12/15.
+//  Copyright (c) 2014年 zxk. All rights reserved.
+//
+
+#ifndef SRBApp_PrefixHeader_pch
+#define SRBApp_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "Constant.h"
+#import "UtilDefine.h"
+#import "URLRequest.h"
+#import "URLS.h"
+#import "GetColor16.h"
+#import "AutoDismissAlert.h"
+#import <MBProgressHUD.h>
+#import "UIViewController+PushAnimate.h"
+#import "NoDataView.h"
+#import "CompareCurrentTime.h"
+#import <Availability.h>
+#import "MobClick.h"
+#import <Foundation/Foundation.h>
+#import "MyImgView.h"
+#import "MyLabel.h"
+#import <UIImageView+WebCache.h>
+#import "FinishView.h"
+#import "LoadImg.h"
+#import "ChangeSizeOfNSString.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <AVFoundation/AVCaptureDevice.h>
+#import <AVFoundation/AVMediaFormat.h>
+#import "UIView+Extension.h"
+#import "NSString+Emoji.h"
+#import "NSDate+Extension.h"
+
+#endif

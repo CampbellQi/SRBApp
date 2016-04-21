@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="12" reuseIdentifier="PublishTopicCell" rowHeight="170" id="KGk-i7-Jjw" customClass="PublishTopicCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oI-gx-PEB">
+                        <rect key="frame" x="143" y="116" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="dU8-dy-Lry"/>
+                            <constraint firstAttribute="height" constant="34" id="wjV-0S-hOX"/>
+                        </constraints>
+                        <state key="normal" image="topic_publish_add"/>
+                        <connections>
+                            <action selector="addBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mJD-v3-Rr9"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuQ-bb-AP5">
+                        <rect key="frame" x="7" y="10" width="307" height="96"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择添加内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0N-wc-y4X">
+                                <rect key="frame" x="100" y="9" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="oNe-sS-hoE"/>
+                                    <constraint firstAttribute="height" constant="21" id="yLM-Kv-ryo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topic_publish_image" translatesAutoresizingMaskIntoConstraints="NO" id="aU4-RT-mPV">
+                                <rect key="frame" x="168" y="30" width="60" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Wie-Ei-ef8"/>
+                                    <constraint firstAttribute="height" constant="56" id="uwS-3C-oia"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topic_publish_text" translatesAutoresizingMaskIntoConstraints="NO" id="za1-nV-8lw">
+                                <rect key="frame" x="79" y="30" width="60" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6KM-Gu-gPa"/>
+                                    <constraint firstAttribute="height" constant="56" id="dXh-LP-xgV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S0N-wc-y4X" firstAttribute="top" secondItem="nuQ-bb-AP5" secondAttribute="top" constant="9" id="6GH-C4-Lac"/>
+                            <constraint firstItem="aU4-RT-mPV" firstAttribute="leading" secondItem="S0N-wc-y4X" secondAttribute="trailing" constant="-39" id="EXm-Cv-LcI"/>
+                            <constraint firstItem="S0N-wc-y4X" firstAttribute="leading" secondItem="za1-nV-8lw" secondAttribute="trailing" constant="-39" id="eoH-P2-yew"/>
+                            <constraint firstAttribute="height" constant="96" id="epv-nk-Hav"/>
+                            <constraint firstItem="aU4-RT-mPV" firstAttribute="top" secondItem="S0N-wc-y4X" secondAttribute="bottom" id="f7g-0c-HFz"/>
+                            <constraint firstItem="S0N-wc-y4X" firstAttribute="centerX" secondItem="nuQ-bb-AP5" secondAttribute="centerX" id="tK0-Nu-JeI"/>
+                            <constraint firstItem="za1-nV-8lw" firstAttribute="top" secondItem="S0N-wc-y4X" secondAttribute="bottom" id="tcK-QA-X08"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJP-Cz-Qgx">
+                        <rect key="frame" x="294" y="0.0" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="QK8-tG-G1J"/>
+                            <constraint firstAttribute="width" constant="24" id="cDE-jb-YDv"/>
+                        </constraints>
+                        <state key="normal" image="topic_publish_delete"/>
+                        <connections>
+                            <action selector="deleteBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eNk-ne-J00"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="nuQ-bb-AP5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="4hU-Us-6NF"/>
+                    <constraint firstAttribute="trailing" secondItem="nuQ-bb-AP5" secondAttribute="trailing" constant="6" id="A68-Zw-OnA"/>
+                    <constraint firstItem="2oI-gx-PEB" firstAttribute="top" secondItem="nuQ-bb-AP5" secondAttribute="bottom" constant="10" id="Epy-2x-ubC"/>
+                    <constraint firstItem="nuQ-bb-AP5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="ExZ-dy-EB4"/>
+                    <constraint firstItem="rJP-Cz-Qgx" firstAttribute="leading" secondItem="nuQ-bb-AP5" secondAttribute="trailing" constant="-20" id="IKM-vN-D9Z"/>
+                    <constraint firstItem="2oI-gx-PEB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aaP-WG-fMI"/>
+                    <constraint firstItem="2oI-gx-PEB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="100" id="b35-go-ZUZ"/>
+                    <constraint firstAttribute="bottom" secondItem="nuQ-bb-AP5" secondAttribute="bottom" constant="1" id="hzZ-Ib-YUK"/>
+                    <constraint firstItem="nuQ-bb-AP5" firstAttribute="top" secondItem="rJP-Cz-Qgx" secondAttribute="bottom" constant="-14" id="reb-cA-wl0"/>
+                    <constraint firstItem="nuQ-bb-AP5" firstAttribute="top" secondItem="2oI-gx-PEB" secondAttribute="bottom" constant="11" id="v6l-zl-733"/>
+                    <constraint firstItem="2oI-gx-PEB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="yuo-KX-dyL"/>
+                    <constraint firstItem="2oI-gx-PEB" firstAttribute="top" secondItem="nuQ-bb-AP5" secondAttribute="bottom" constant="13" id="zba-RX-UXc"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="hzZ-Ib-YUK"/>
+                        <exclude reference="v6l-zl-733"/>
+                        <exclude reference="b35-go-ZUZ"/>
+                        <exclude reference="yuo-KX-dyL"/>
+                        <exclude reference="zba-RX-UXc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addBtn" destination="2oI-gx-PEB" id="Ctc-bZ-Uou"/>
+                <outlet property="bgView" destination="nuQ-bb-AP5" id="onp-V2-b2W"/>
+                <outlet property="deleteBtn" destination="rJP-Cz-Qgx" id="slb-JY-IUl"/>
+                <outlet property="imageIV" destination="aU4-RT-mPV" id="yob-8A-lNS"/>
+                <outlet property="textIV" destination="za1-nV-8lw" id="2Xf-RC-aJs"/>
+            </connections>
+            <point key="canvasLocation" x="1026" y="378.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="topic_publish_add" width="22" height="22"/>
+        <image name="topic_publish_delete" width="22" height="22"/>
+        <image name="topic_publish_image" width="26" height="39"/>
+        <image name="topic_publish_text" width="26" height="39"/>
+    </resources>
+</document>

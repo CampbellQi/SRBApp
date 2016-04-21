@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>54E50CBE-7B3B-41AC-8152-9E7CEFB8DABA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SRBApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5ddd2f31-210f-cf4b-959e-994dda472489</key>
+		<string>https://182.92.99.129/svn/bangiphonev2</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SRBApp/SRBApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5ddd2f31-210f-cf4b-959e-994dda472489</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5ddd2f31-210f-cf4b-959e-994dda472489</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5ddd2f31-210f-cf4b-959e-994dda472489</string>
+			<key>IDESourceControlWCCName</key>
+			<string>shurenbang</string>
+		</dict>
+	</array>
+</dict>
+</plist>

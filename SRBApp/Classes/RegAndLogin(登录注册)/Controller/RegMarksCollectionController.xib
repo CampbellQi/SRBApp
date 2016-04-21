@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegMarksCollectionController">
+            <connections>
+                <outlet property="collectionView" destination="vxF-nd-81Q" id="zZL-J2-SL6"/>
+                <outlet property="countLbl" destination="eyk-Fs-7Zl" id="jVW-kd-5fS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vxF-nd-81Q">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dk9-lb-J2E">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GVw-Ts-tMM"/>
+                        <outlet property="delegate" destination="-1" id="9Zu-hM-CgU"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择感兴趣的标签(至少5个)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyk-Fs-7Zl">
+                    <rect key="frame" x="0.0" y="435" width="320" height="45"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="klU-fe-2p7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vxF-nd-81Q" secondAttribute="bottom" id="2FQ-ih-cAm"/>
+                <constraint firstItem="vxF-nd-81Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3eI-DP-Dwt"/>
+                <constraint firstAttribute="trailing" secondItem="vxF-nd-81Q" secondAttribute="trailing" id="HoE-PX-zUb"/>
+                <constraint firstAttribute="trailing" secondItem="eyk-Fs-7Zl" secondAttribute="trailing" id="PcL-eJ-ZBo"/>
+                <constraint firstAttribute="bottom" secondItem="eyk-Fs-7Zl" secondAttribute="bottom" id="fBt-yI-ahd"/>
+                <constraint firstItem="eyk-Fs-7Zl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fsX-Ls-eMq"/>
+                <constraint firstItem="vxF-nd-81Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kXN-fV-i3C"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1276" y="348"/>
+        </view>
+    </objects>
+</document>

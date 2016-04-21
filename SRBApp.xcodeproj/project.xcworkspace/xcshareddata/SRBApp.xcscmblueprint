@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5ddd2f31-210f-cf4b-959e-994dda472489",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "5ddd2f31-210f-cf4b-959e-994dda472489" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5ddd2f31-210f-cf4b-959e-994dda472489" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "54E50CBE-7B3B-41AC-8152-9E7CEFB8DABA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5ddd2f31-210f-cf4b-959e-994dda472489" : "shurenbang"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SRBApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SRBApp\/SRBApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/182.92.99.129\/svn\/bangiphonev2",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5ddd2f31-210f-cf4b-959e-994dda472489"
+    }
+  ]
+}

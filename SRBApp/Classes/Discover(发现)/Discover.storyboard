@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OMq-et-MtQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Publish Topic Controller-->
+        <scene sceneID="PuO-RY-BA4">
+            <objects>
+                <viewController id="OMq-et-MtQ" customClass="PublishTopicController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="flh-x0-ChM"/>
+                        <viewControllerLayoutGuide type="bottom" id="sYd-0u-WUf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pwh-bt-NGH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yv0-Lc-lUC" customClass="FMMoveTableView">
+                                <rect key="frame" x="0.0" y="-20" width="320" height="500"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OMq-et-MtQ" id="pJ0-gP-guP"/>
+                                    <outlet property="delegate" destination="OMq-et-MtQ" id="C1i-QJ-l7W"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-hM-oQH">
+                                <rect key="frame" x="-3" y="25" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HlZ-B3-8ek"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="btq-oz-qQF"/>
+                                    <constraint firstAttribute="width" constant="45" id="cTm-Pm-zmw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="xYL-pJ-uAa"/>
+                                </constraints>
+                                <state key="normal" image="topic_publish_back"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="btq-oz-qQF"/>
+                                        <exclude reference="xYL-pJ-uAa"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCW-J3-gDF">
+                                <rect key="frame" x="251" y="27" width="55" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="GCR-St-ZAe"/>
+                                    <constraint firstAttribute="height" constant="25" id="y9g-PS-O9A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="发 布">
+                                    <color key="titleColor" red="0.8980392157" green="0.0" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Yv0-Lc-lUC" secondAttribute="trailing" id="3bR-eg-T2Q"/>
+                            <constraint firstItem="3mM-hM-oQH" firstAttribute="leading" secondItem="pwh-bt-NGH" secondAttribute="leading" constant="-3" id="B18-cl-7y6"/>
+                            <constraint firstItem="sYd-0u-WUf" firstAttribute="top" secondItem="Yv0-Lc-lUC" secondAttribute="bottom" id="JgR-B5-HRT"/>
+                            <constraint firstItem="Yv0-Lc-lUC" firstAttribute="top" secondItem="pwh-bt-NGH" secondAttribute="top" constant="-20" id="Rwj-Xx-wU8"/>
+                            <constraint firstItem="Yv0-Lc-lUC" firstAttribute="leading" secondItem="pwh-bt-NGH" secondAttribute="leading" id="W7I-jW-Txy"/>
+                            <constraint firstItem="3mM-hM-oQH" firstAttribute="top" secondItem="pwh-bt-NGH" secondAttribute="top" constant="25" id="YRe-Cp-ny9"/>
+                            <constraint firstAttribute="trailing" secondItem="fCW-J3-gDF" secondAttribute="trailing" constant="14" id="bNe-Mb-4f0"/>
+                            <constraint firstItem="fCW-J3-gDF" firstAttribute="top" secondItem="pwh-bt-NGH" secondAttribute="top" constant="27" id="fAg-RR-bki"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="backBtn" destination="3mM-hM-oQH" id="QIX-pS-mey"/>
+                        <outlet property="publishBtn" destination="fCW-J3-gDF" id="pw1-Qh-HuQ"/>
+                        <outlet property="tableView" destination="Yv0-Lc-lUC" id="fXK-wM-32c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U05-dZ-LxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127" y="479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="topic_publish_back" width="13" height="24"/>
+    </resources>
+</document>

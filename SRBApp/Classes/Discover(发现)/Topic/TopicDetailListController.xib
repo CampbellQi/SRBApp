@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopicDetailListController">
+            <connections>
+                <outlet property="collectBtn" destination="jJS-dR-9cT" id="dkv-h3-TrY"/>
+                <outlet property="commentBtn" destination="ho4-kc-NZt" id="C2R-3X-yYf"/>
+                <outlet property="praiseBtn" destination="vNO-SC-0f4" id="Dc5-Mt-yt4"/>
+                <outlet property="tableView" destination="49C-nk-4id" id="P1I-OE-zt8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="49C-nk-4id">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ddo-ge-AVw"/>
+                        <outlet property="delegate" destination="-1" id="9uL-Nt-D2S"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgg-Fp-lLI">
+                    <rect key="frame" x="0.0" y="438" width="320" height="42"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNO-SC-0f4">
+                            <rect key="frame" x="128" y="0.0" width="65" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="1rx-H7-J1x"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="  点赞" image="topic_detail_praise_normal">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="topic_detail_praise_selected">
+                                <color key="titleColor" red="0.89019607840000003" green="0.25882352939999997" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="praiseBtnClicked:" destination="-1" eventType="touchUpInside" id="gIw-Gs-PSM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho4-kc-NZt">
+                            <rect key="frame" x="225" y="0.0" width="65" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="eVy-Xr-oGm"/>
+                                <constraint firstAttribute="height" constant="49" id="qKD-BA-bke"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="  评论" image="topic_detail_comment_normal">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="topic_detail_comment_selected">
+                                <color key="titleColor" red="0.89019607840000003" green="0.25882352939999997" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="qKD-BA-bke"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="commentBtnClicked:" destination="-1" eventType="touchUpInside" id="MNu-d0-OSi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJS-dR-9cT">
+                            <rect key="frame" x="30" y="0.0" width="65" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="WEs-EL-o5O"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="  收藏" image="topic_detail_collect_normal">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="topic_detail_collect_selected">
+                                <color key="titleColor" red="0.89019607840000003" green="0.25882352939999997" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="collectBtnClicked:" destination="-1" eventType="touchUpInside" id="FDd-rZ-zaJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ho4-kc-NZt" secondAttribute="trailing" constant="30" id="5Hj-AG-CRD"/>
+                        <constraint firstItem="ho4-kc-NZt" firstAttribute="top" secondItem="Fgg-Fp-lLI" secondAttribute="top" id="GDO-j3-Tdv"/>
+                        <constraint firstAttribute="height" constant="42" id="U4l-DQ-QAt"/>
+                        <constraint firstAttribute="bottom" secondItem="jJS-dR-9cT" secondAttribute="bottom" id="X5S-mV-2v2"/>
+                        <constraint firstItem="jJS-dR-9cT" firstAttribute="leading" secondItem="Fgg-Fp-lLI" secondAttribute="leading" constant="30" id="bjr-Gv-1mg"/>
+                        <constraint firstAttribute="centerX" secondItem="vNO-SC-0f4" secondAttribute="centerX" id="fE8-HE-uZk"/>
+                        <constraint firstAttribute="bottom" secondItem="vNO-SC-0f4" secondAttribute="bottom" id="nUD-Sb-AJo"/>
+                        <constraint firstItem="jJS-dR-9cT" firstAttribute="top" secondItem="Fgg-Fp-lLI" secondAttribute="top" id="rOE-AU-98d"/>
+                        <constraint firstItem="vNO-SC-0f4" firstAttribute="top" secondItem="Fgg-Fp-lLI" secondAttribute="top" id="ye1-qa-Sk7"/>
+                        <constraint firstAttribute="bottom" secondItem="ho4-kc-NZt" secondAttribute="bottom" id="zJM-VB-wjf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Fgg-Fp-lLI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Ge-gb-ZuF"/>
+                <constraint firstAttribute="trailing" secondItem="49C-nk-4id" secondAttribute="trailing" id="EcL-bu-Jbq"/>
+                <constraint firstItem="49C-nk-4id" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Sdj-d6-nk0"/>
+                <constraint firstAttribute="bottom" secondItem="49C-nk-4id" secondAttribute="bottom" id="VKT-Un-FeD"/>
+                <constraint firstAttribute="bottom" secondItem="Fgg-Fp-lLI" secondAttribute="bottom" id="djh-it-RN2"/>
+                <constraint firstAttribute="trailing" secondItem="Fgg-Fp-lLI" secondAttribute="trailing" id="ilf-Oy-ntc"/>
+                <constraint firstItem="49C-nk-4id" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xVk-Qu-HMf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="443" y="418"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="topic_detail_collect_normal" width="25" height="25"/>
+        <image name="topic_detail_collect_selected" width="25" height="25"/>
+        <image name="topic_detail_comment_normal" width="25" height="25"/>
+        <image name="topic_detail_comment_selected" width="25" height="25"/>
+        <image name="topic_detail_praise_normal" width="25" height="25"/>
+        <image name="topic_detail_praise_selected" width="25" height="25"/>
+    </resources>
+</document>

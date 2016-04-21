@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RechargeViewController">
+            <connections>
+                <outlet property="chargeNumText" destination="juu-yQ-L1D" id="y5V-eC-zZA"/>
+                <outlet property="leftImg" destination="dpK-WV-Ny8" id="byj-e9-UsN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cq-aC-A1H">
+                    <rect key="frame" x="0.0" y="40" width="600" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入充值金额" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="juu-yQ-L1D">
+                            <rect key="frame" x="75" y="12" width="200" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="2RS-Uo-TTM"/>
+                                <constraint firstAttribute="height" constant="25" id="B2w-fA-MJk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="ZHG-LA-1zM"/>
+                            </connections>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recharge_edit_nor.png" translatesAutoresizingMaskIntoConstraints="NO" id="dpK-WV-Ny8">
+                            <rect key="frame" x="25" y="12" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="UMb-Kl-WDL"/>
+                                <constraint firstAttribute="height" constant="25" id="hP1-e2-sJS"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="juu-yQ-L1D" firstAttribute="leading" secondItem="dpK-WV-Ny8" secondAttribute="trailing" constant="25" id="EcQ-zO-1XC"/>
+                        <constraint firstItem="dpK-WV-Ny8" firstAttribute="leading" secondItem="0cq-aC-A1H" secondAttribute="leading" constant="25" id="Jpv-Td-i8A"/>
+                        <constraint firstItem="dpK-WV-Ny8" firstAttribute="top" secondItem="0cq-aC-A1H" secondAttribute="top" constant="12" id="TIE-U8-rbM"/>
+                        <constraint firstItem="juu-yQ-L1D" firstAttribute="top" secondItem="0cq-aC-A1H" secondAttribute="top" constant="12" id="sBF-Ty-an6"/>
+                        <constraint firstAttribute="height" constant="50" id="z8v-Xz-lsr"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充值金额" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-52-NwO">
+                    <rect key="frame" x="25" y="13" width="80" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="c29-Cy-7Hz"/>
+                        <constraint firstAttribute="width" constant="80" id="hk5-OL-3Hb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0cq-aC-A1H" secondAttribute="trailing" id="0A0-Nq-nWD"/>
+                <constraint firstItem="v9B-52-NwO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="31s-vi-pJM"/>
+                <constraint firstItem="0cq-aC-A1H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PCK-FL-fC8"/>
+                <constraint firstItem="0cq-aC-A1H" firstAttribute="top" secondItem="v9B-52-NwO" secondAttribute="bottom" constant="13" id="qtN-uX-fRw"/>
+                <constraint firstItem="v9B-52-NwO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="yui-TM-y8n"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="recharge_edit_nor.png" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="308" id="KGk-i7-Jjw" customClass="PublishTopicImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="286"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="285"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPS-cU-8Xk">
+                        <rect key="frame" x="6" y="10" width="308" height="231"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zanwu.png" translatesAutoresizingMaskIntoConstraints="NO" id="txQ-cw-JPP">
+                                <rect key="frame" x="8" y="6" width="292" height="219"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="txQ-cw-JPP" secondAttribute="bottom" constant="6" id="aFU-1f-v6E"/>
+                            <constraint firstAttribute="trailing" secondItem="txQ-cw-JPP" secondAttribute="trailing" constant="8" id="iz3-7n-cpv"/>
+                            <constraint firstItem="txQ-cw-JPP" firstAttribute="top" secondItem="QPS-cU-8Xk" secondAttribute="top" constant="6" id="oLY-fd-IEg"/>
+                            <constraint firstAttribute="width" secondItem="QPS-cU-8Xk" secondAttribute="height" multiplier="4:3" priority="750" id="oMS-8T-CsD"/>
+                            <constraint firstItem="txQ-cw-JPP" firstAttribute="leading" secondItem="QPS-cU-8Xk" secondAttribute="leading" constant="8" id="x3h-Jw-qdz"/>
+                            <constraint firstAttribute="bottom" secondItem="txQ-cw-JPP" secondAttribute="bottom" constant="6" id="xNK-gG-ADu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xNK-gG-ADu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTP-OX-gpI">
+                        <rect key="frame" x="294" y="0.0" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="5or-yU-CtW"/>
+                            <constraint firstAttribute="height" constant="24" id="WPB-PT-ngM"/>
+                        </constraints>
+                        <state key="normal" image="topic_publish_delete"/>
+                        <connections>
+                            <action selector="deleteBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mmp-d5-l8D"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy1-8m-KzT">
+                        <rect key="frame" x="143" y="251" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="Kip-e8-RnV"/>
+                            <constraint firstAttribute="width" constant="34" id="hCX-Yi-Iai"/>
+                            <constraint firstAttribute="height" constant="34" id="oIk-e3-saX"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="slh-JW-Kcw"/>
+                        </constraints>
+                        <state key="normal" image="topic_publish_add"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kip-e8-RnV"/>
+                                <exclude reference="slh-JW-Kcw"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="addBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="s04-Ch-Vwl"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="QPS-cU-8Xk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="54u-7Q-MC0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QPS-cU-8Xk" secondAttribute="bottom" constant="43" id="9lo-fe-dZv"/>
+                    <constraint firstItem="iy1-8m-KzT" firstAttribute="top" secondItem="QPS-cU-8Xk" secondAttribute="bottom" constant="11" id="XOn-wd-H11"/>
+                    <constraint firstItem="iy1-8m-KzT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XRC-Mf-123"/>
+                    <constraint firstItem="uTP-OX-gpI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="csN-jy-mc9"/>
+                    <constraint firstAttribute="trailing" secondItem="uTP-OX-gpI" secondAttribute="trailing" constant="2" id="e0W-2z-mTu"/>
+                    <constraint firstAttribute="bottom" secondItem="QPS-cU-8Xk" secondAttribute="bottom" constant="6" id="kVG-xC-nTh"/>
+                    <constraint firstItem="QPS-cU-8Xk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nc9-VK-vuL"/>
+                    <constraint firstAttribute="bottom" secondItem="iy1-8m-KzT" secondAttribute="bottom" id="qEc-Ck-a4h"/>
+                    <constraint firstAttribute="trailing" secondItem="QPS-cU-8Xk" secondAttribute="trailing" constant="6" id="vgJ-g9-nn0"/>
+                    <constraint firstItem="iy1-8m-KzT" firstAttribute="top" secondItem="QPS-cU-8Xk" secondAttribute="bottom" constant="10" id="yud-V3-j3X"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="9lo-fe-dZv"/>
+                        <exclude reference="kVG-xC-nTh"/>
+                        <exclude reference="XOn-wd-H11"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addBtn" destination="iy1-8m-KzT" id="XXg-Zb-8o9"/>
+                <outlet property="bgView" destination="QPS-cU-8Xk" id="bjN-eO-IZV"/>
+                <outlet property="contentIV" destination="txQ-cw-JPP" id="nq4-mf-w6k"/>
+            </connections>
+            <point key="canvasLocation" x="1102" y="507"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="topic_publish_add" width="22" height="22"/>
+        <image name="topic_publish_delete" width="22" height="22"/>
+        <image name="zanwu.png" width="1200" height="900"/>
+    </resources>
+</document>
